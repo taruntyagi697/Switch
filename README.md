@@ -9,11 +9,10 @@
 
 ## How To Use
 Using Switch is quite simple :
-        UIImage* image = [UIImage imageNamed:@"switch.png"];
-	    Switch* mySwitch = [Switch switchWithImage:image visibleWidth:200];
-        [mySwitch addTarget:self action:@selector(switchToggled:)
-           forControlEvents:UIControlEventValueChanged];
-        [self.view addSubview:mySwitch];
+    UIImage* image = [UIImage imageNamed:@"switch.png"];
+    Switch* mySwitch = [Switch switchWithImage:image visibleWidth:200];
+    [mySwitch addTarget:self action:@selector(switchToggled:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:mySwitch];
 * Switch uses the image and visible width combination to toggle between states.
 * You can provide cornerRadius of your choice to make it appear roundedCorner style or any other.
 
