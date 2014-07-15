@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B639B116-73CB-4BE9-9B13-B690C759955F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwitchDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BB53FC98-4A89-4275-B076-936F30E69C4A</key>
+		<string>https://github.com/taruntyagi697/Switch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Objective-C/Example/SwitchDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BB53FC98-4A89-4275-B076-936F30E69C4A</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/taruntyagi697/Switch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BB53FC98-4A89-4275-B076-936F30E69C4A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BB53FC98-4A89-4275-B076-936F30E69C4A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Switch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
