@@ -24,8 +24,8 @@ You can provide any image, just one complete image containing ON-THUMB-OFF (see 
 and visibleWidth to toggle between states, and that's it.
 
 All that appearance depends on how creative your artwork is.
-A typical expected Switch image must be of following form :-
-![SwitchImage] (https://raw.githubusercontent.com/taruntyagi697/Switch/master/Objective-C/Example/SwitchDemo/SwitchArtwork/switch9.png.png)
+A typical expected Switch image must be of form :-
+![SwitchImage] (https://raw.githubusercontent.com/taruntyagi697/Switch/master/Objective-C/Example/SwitchDemo/SwitchArtwork/switch9.png)
 
 ## How It Looks
 ![Screenshot1] (https://raw.githubusercontent.com/taruntyagi697/Switch/master/Screenshots/Screenshot1.png)
