@@ -19,6 +19,7 @@ Using Switch is quite simple :
 * You can provide cornerRadius of your choice to make it appear roundedCorner style or any other.
 
 ## What's the catch ?
+#### It's the simplest, yet the appearance is all yours!
 You can provide any image, just one complete image containing ON-THUMB-OFF (see image below) both states
 (for reference, see `SwitchArtwork` in demo app) 
 and visibleWidth to toggle between states, and that's it.
