@@ -19,11 +19,13 @@ Using Switch is quite simple :
 * You can provide cornerRadius of your choice to make it appear roundedCorner style or any other.
 
 ## What's the catch ?
-You can provide any image, just one complete image containing ON-THUMB-OFF both states
+You can provide any image, just one complete image containing ON-THUMB-OFF (see image below) both states
 (for reference, see `SwitchArtwork` in demo app) 
 and visibleWidth to toggle between states, and that's it.
 
 All that appearance depends on how creative your artwork is.
+A typical expected Switch image must be of following form :-
+![SwitchImage] (https://raw.githubusercontent.com/taruntyagi697/Switch/master/Objective-C/Example/SwitchDemo/SwitchArtwork/switch9.png.png)
 
 ## How It Looks
 ![Screenshot1] (https://raw.githubusercontent.com/taruntyagi697/Switch/master/Screenshots/Screenshot1.png)
@@ -31,4 +33,4 @@ All that appearance depends on how creative your artwork is.
 
     
 ## Demo App
-    Demo app includes the most basic regular example just for reference.
+    Demo app includes an example just for reference.
