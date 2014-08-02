@@ -32,9 +32,9 @@
 		AAC594581974D77C0051B9BD /* switch8.png in Resources */ = {isa = PBXBuildFile; fileRef = AAC5944E1974D77C0051B9BD /* switch8.png */; };
 		AAC594591974D77C0051B9BD /* switch9.png in Resources */ = {isa = PBXBuildFile; fileRef = AAC5944F1974D77C0051B9BD /* switch9.png */; };
 		AAEEAEA01975AD67006867F5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEEAE9F1975AD67006867F5 /* QuartzCore.framework */; };
-		AAEEAEA31975AF0B006867F5 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = AAEEAEA11975AF0B006867F5 /* LICENSE.md */; };
-		AAEEAEA41975AF0B006867F5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AAEEAEA21975AF0B006867F5 /* README.md */; };
-		AAEEAEA81975AFF8006867F5 /* Switch.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEEAEA71975AFF8006867F5 /* Switch.m */; };
+		AAF7C461198CD9EC00BA5438 /* Switch.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7C460198CD9EC00BA5438 /* Switch.m */; };
+		AAF7C464198CD9FA00BA5438 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = AAF7C462198CD9FA00BA5438 /* LICENSE.md */; };
+		AAF7C465198CD9FA00BA5438 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AAF7C463198CD9FA00BA5438 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,10 +78,10 @@
 		AAC5944E1974D77C0051B9BD /* switch8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch8.png; sourceTree = "<group>"; };
 		AAC5944F1974D77C0051B9BD /* switch9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch9.png; sourceTree = "<group>"; };
 		AAEEAE9F1975AD67006867F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		AAEEAEA11975AF0B006867F5 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.md; path = ../../LICENSE.md; sourceTree = "<group>"; };
-		AAEEAEA21975AF0B006867F5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		AAEEAEA61975AFF8006867F5 /* Switch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switch.h; sourceTree = "<group>"; };
-		AAEEAEA71975AFF8006867F5 /* Switch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Switch.m; sourceTree = "<group>"; };
+		AAF7C45F198CD9EC00BA5438 /* Switch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switch.h; sourceTree = "<group>"; };
+		AAF7C460198CD9EC00BA5438 /* Switch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Switch.m; sourceTree = "<group>"; };
+		AAF7C462198CD9FA00BA5438 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
+		AAF7C463198CD9FA00BA5438 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +112,9 @@
 		AA25C0B8197444EC000A63C5 = {
 			isa = PBXGroup;
 			children = (
-				AAEEAEA11975AF0B006867F5 /* LICENSE.md */,
-				AAEEAEA21975AF0B006867F5 /* README.md */,
-				AAEEAEA51975AFF8006867F5 /* Switch */,
+				AAF7C462198CD9FA00BA5438 /* LICENSE.md */,
+				AAF7C463198CD9FA00BA5438 /* README.md */,
+				AAF7C45E198CD9EC00BA5438 /* Switch */,
 				AA25C0CA197444EC000A63C5 /* SwitchDemo */,
 				AA25C0E9197444EC000A63C5 /* SwitchDemoTests */,
 				AA25C0C3197444EC000A63C5 /* Frameworks */,
@@ -204,11 +204,11 @@
 			path = SwitchArtwork;
 			sourceTree = "<group>";
 		};
-		AAEEAEA51975AFF8006867F5 /* Switch */ = {
+		AAF7C45E198CD9EC00BA5438 /* Switch */ = {
 			isa = PBXGroup;
 			children = (
-				AAEEAEA61975AFF8006867F5 /* Switch.h */,
-				AAEEAEA71975AFF8006867F5 /* Switch.m */,
+				AAF7C45F198CD9EC00BA5438 /* Switch.h */,
+				AAF7C460198CD9EC00BA5438 /* Switch.m */,
 			);
 			name = Switch;
 			path = ../Switch;
@@ -297,13 +297,13 @@
 				AAC594561974D77C0051B9BD /* switch6.png in Resources */,
 				AAC594521974D77C0051B9BD /* switch2.png in Resources */,
 				AAC594501974D77C0051B9BD /* switch0.png in Resources */,
-				AAEEAEA31975AF0B006867F5 /* LICENSE.md in Resources */,
+				AAF7C464198CD9FA00BA5438 /* LICENSE.md in Resources */,
 				AA25C0DD197444EC000A63C5 /* Images.xcassets in Resources */,
 				AAC594541974D77C0051B9BD /* switch4.png in Resources */,
 				AAC594511974D77C0051B9BD /* switch1.png in Resources */,
 				AAC594571974D77C0051B9BD /* switch7.png in Resources */,
 				AAC594591974D77C0051B9BD /* switch9.png in Resources */,
-				AAEEAEA41975AF0B006867F5 /* README.md in Resources */,
+				AAF7C465198CD9FA00BA5438 /* README.md in Resources */,
 				AA25C0CF197444EC000A63C5 /* InfoPlist.strings in Resources */,
 				AA25C0D8197444EC000A63C5 /* Main.storyboard in Resources */,
 			);
@@ -325,7 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA25C0D1197444EC000A63C5 /* main.m in Sources */,
-				AAEEAEA81975AFF8006867F5 /* Switch.m in Sources */,
+				AAF7C461198CD9EC00BA5438 /* Switch.m in Sources */,
 				AA25C0DB197444EC000A63C5 /* SDViewController.m in Sources */,
 				AA25C0D5197444EC000A63C5 /* SDAppDelegate.m in Sources */,
 			);
