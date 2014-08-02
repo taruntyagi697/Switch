@@ -35,7 +35,7 @@ and visibleWidth to toggle between states, and that's it.
 
 All that appearance depends on how creative your artwork is.
 A typical expected Switch image must be of form :-
-![SwitchImage] (https://raw.githubusercontent.com/taruntyagi697/Switch/master/Objective-C/Example/SwitchDemo/SwitchArtwork/switch9.png)
+![SwitchImage] (https://raw.githubusercontent.com/taruntyagi697/Switch/master/Example/SwitchDemo/SwitchArtwork/switch9.png)
 
 ## How It Looks
 ![Screenshot1] (https://raw.githubusercontent.com/taruntyagi697/Switch/master/Screenshots/Screenshot1.png)
