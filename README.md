@@ -25,6 +25,7 @@ Switch* mySwitch = [Switch switchWithImage:image visibleWidth:200 visibleWidthVi
 ```
 
 * Switch uses the image and visible width combination to toggle between states.
+* Use visibleWidthViewImageRatio = 1 if image visible width corresponds to the expected view width in pixels. Otherwise pass ratio calculated as [expected view width] / visibleWidth
 * You can provide cornerRadius of your choice to make it appear roundedCorner style or any other.
 
 ## What's the catch ?
