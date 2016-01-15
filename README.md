@@ -19,7 +19,7 @@ pod 'Switch'
 Using Switch is quite simple :
 ```objective-c
 UIImage* image = [UIImage imageNamed:@"switch.png"];
-Switch* mySwitch = [Switch switchWithImage:image visibleWidth:200];
+Switch* mySwitch = [Switch switchWithImage:image visibleWidth:200 visibleWidthViewImageRatio:1];
 [mySwitch addTarget:self action:@selector(switchToggled:) forControlEvents:UIControlEventValueChanged];
 [self.view addSubview:mySwitch];
 ```
