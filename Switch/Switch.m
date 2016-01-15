@@ -23,7 +23,6 @@
  */
 
 #import "Switch.h"
-#define Scale [UIScreen mainScreen].scale
 
 @interface Switch()
 {
@@ -37,20 +36,22 @@
 
 +(Switch*)switchWithImage:(UIImage*)switchImage
              visibleWidth:(CGFloat)visibleWidth
+visibleWidthViewImageRatio:(CGFloat)visibleWidthViewImageRatio
 {
-    return [[self alloc] initSwitchWithImage:switchImage visibleWidth:visibleWidth];
+    return [[self alloc] initSwitchWithImage:switchImage visibleWidth:visibleWidth visibleWidthViewImageRatio:visibleWidthViewImageRatio];
 }
 
--(id)initSwitchWithImage:(UIImage*)switchImage visibleWidth:(CGFloat)visibleWidth
+-(id)initSwitchWithImage:(UIImage*)switchImage visibleWidth:(CGFloat)visibleWidth visibleWidthViewImageRatio:(CGFloat)visibleWidthViewImageRatio
 {
     if(self = [super init])
     {
         _image = switchImage;
         _visibleWidth = visibleWidth;
+        _visibleWidthViewImageRatio = visibleWidthViewImageRatio;
         _origin = CGPointZero;
         
         self.frame = CGRectMake(_origin.x, _origin.y,
-                                _visibleWidth, _image.size.height/Scale);
+                                _visibleWidth, self.visibleWidthViewImageRatio * _image.size.height);
         self.clipsToBounds = YES;
         
         imgVw = [[UIImageView alloc] initWithFrame:CGRectZero];
@@ -72,6 +73,19 @@
     return self;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    self.frame = CGRectMake(self.origin.x, self.origin.y, self.visibleWidthViewImageRatio * self.visibleWidth, self.visibleWidthViewImageRatio * self.image.size.height);
+    
+    imgVw.bounds = CGRectMake(0.f, 0.f,
+                              self.visibleWidthViewImageRatio * self.image.size.width,
+                              self.visibleWidthViewImageRatio * self.image.size.height);
+    imgVw.center = CGPointMake(self.on ? 0.5f * CGRectGetWidth(imgVw.bounds) : 0.f,
+                               0.5f * CGRectGetHeight(self.bounds));
+}
+
 #pragma mark
 #pragma mark<Property Setters>
 #pragma mark
@@ -79,27 +93,20 @@
 -(void)setVisibleWidth:(CGFloat)visibleWidth
 {
     _visibleWidth = visibleWidth;
-    
-    self.frame = CGRectMake(_origin.x, _origin.y, _visibleWidth, self.frame.size.height);
-    imgVw.frame = CGRectMake((_on ? 0 : -(_image.size.width/Scale - _visibleWidth)), 0,
-                             _image.size.width/Scale, _image.size.height/Scale);
+    [self setNeedsLayout];
 }
 
 -(void)setOrigin:(CGPoint)origin
 {
     _origin = origin;
-    
-    self.frame = CGRectMake(_origin.x, _origin.y, _visibleWidth, self.frame.size.height);
+    [self setNeedsLayout];
 }
 
 -(void)setImage:(UIImage*)image
 {
     _image = image;
-    
-    self.frame = CGRectMake(_origin.x, _origin.y, _visibleWidth, _image.size.height/Scale);
-    imgVw.frame = CGRectMake((_on ? 0 : -(_image.size.width/Scale - _visibleWidth)), 0,
-                             _image.size.width/Scale, _image.size.height/Scale);
     imgVw.image = _image;
+    [self setNeedsLayout];
 }
 
 #pragma mark
@@ -116,7 +123,7 @@
                      animations:^
      {
          self.userInteractionEnabled = NO;
-         imgVw.frame = CGRectMake((_on ? 0 : -(imgVw.frame.size.width-_visibleWidth)), 0,
+         imgVw.frame = CGRectMake((_on ? 0 : -(imgVw.frame.size.width-_visibleWidth * self.visibleWidthViewImageRatio)), 0,
                                   imgVw.frame.size.width,
                                   imgVw.frame.size.height);
      }
