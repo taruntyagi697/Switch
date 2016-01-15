@@ -37,6 +37,8 @@ add -fobjc-arc flag for Switch.m file in Build Phases -> Compile Sources.
 //Width for switch frame, should always be less than the image's width
 @property(nonatomic,assign)CGFloat visibleWidth;
 
+@property(nonatomic,assign)CGFloat visibleWidthViewImageRatio;
+
 //Origin helps in positioning the switch, as width,height depend on image
 @property(nonatomic,assign)CGPoint origin;
 
@@ -46,8 +48,11 @@ add -fobjc-arc flag for Switch.m file in Build Phases -> Compile Sources.
 //ON-OFF toggle boolean
 @property(nonatomic,assign)BOOL on;
 
-//Class Helper to instantiate Switch with image & expected visibleWidth
+//Class Helper to instantiate Switch with image & expected visibleWidth of image.
+//  visibleWidthViewImageRatio is a ratio between expected switch view width
+//  and visible image width
 +(Switch*)switchWithImage:(UIImage*)switchImage
-             visibleWidth:(CGFloat)visibleWidth;
+             visibleWidth:(CGFloat)visibleWidth
+visibleWidthViewImageRatio:(CGFloat)visibleWidthViewImageRatio;
 
 @end
